@@ -1,4 +1,8 @@
 class BooksController < ApplicationController
+
+  def show
+  end
+
   def create
     Book.create(book_params)
 

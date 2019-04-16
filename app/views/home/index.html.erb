@@ -8,7 +8,7 @@
       <div><small><%= time_ago_in_words b.created_at %> ago</small></div>
       <%= b.description %>
       <div>
-        <a href="/questions/12" class="badge badge-success">Read more</a>
+        <a href="<%= book_path(b) %>" class="badge badge-success">Read more</a>
       </div>
     </div>
   </li>
