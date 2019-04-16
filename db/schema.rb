@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_16_184110) do
+ActiveRecord::Schema.define(version: 2019_04_16_201158) do
 
   create_table "books", force: :cascade do |t|
     t.string "title", null: false
     t.string "author", null: false
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "notes", force: :cascade do |t|
+    t.integer "page_number"
+    t.string "body"
+    t.integer "book_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
