@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   def show
     @book = Book.find(params[:id])
 
-    @notes = @book.notes.order(created_at :desc)
+    @notes = @book.notes.order(created_at: :desc)
   end
 
   def create

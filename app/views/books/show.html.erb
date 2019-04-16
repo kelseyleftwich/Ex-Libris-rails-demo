@@ -28,6 +28,7 @@
       </span>
       <div class="media-body">
         <h5 class="mt-0 mb-1">Page <%= note.page_number %></h5>
+        <div><small>Added <%= time_ago_in_words note.created_at %> ago</small></div>
         <%= note.body %>
       </div>
     </li>
