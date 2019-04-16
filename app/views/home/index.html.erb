@@ -5,6 +5,7 @@
     <img src="<%=b.thumbnail%>" class="mr-3" alt="...">
     <div class="media-body">
       <h5 class="mt-0 mb-1"><i><%= b.title %></i> <%= b.author %></h5>
+      <div><small><%= time_ago_in_words b.created_at %> ago</small></div>
       <%= b.description %>
       <div>
         <a href="/questions/12" class="badge badge-success">Read more</a>
