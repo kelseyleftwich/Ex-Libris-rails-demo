@@ -2,7 +2,7 @@
 <ul class="list-unstyled">
   <% @books.each do |b| %>
   <li class="media my-4">
-    <img src="https://via.placeholder.com/64" class="mr-3" alt="...">
+    <img src="<%=b.thumbnail%>" class="mr-3" alt="...">
     <div class="media-body">
       <h5 class="mt-0 mb-1"><i><%= b.title %></i> <%= b.author %></h5>
       <%= b.description %>
