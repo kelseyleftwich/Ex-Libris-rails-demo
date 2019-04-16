@@ -7,27 +7,27 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <%= form_for :question, url: '/questions' do %>
+      <%= form_for :book, url: '/books' do %>
         <div class="modal-body">
         
           <div class="form-group row">
             <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
             <div class="col-sm-10">
-              <input type="text" name="title" class="form-control" id="inputTitle" placeholder="Title">
+              <input type="text" name="book[title]" class="form-control" id="inputTitle" placeholder="Title">
             </div>
           </div>
           
           <div class="form-group row">
             <label for="inputAuthor" class="col-sm-2 col-form-label">Author</label>
             <div class="col-sm-10">
-              <input type="text" name="author" class="form-control" id="inputAuthor" placeholder="Author">
+              <input type="text" name="book[author]" class="form-control" id="inputAuthor" placeholder="Author">
             </div>
           </div>
 
           <div class="form-group row">
               <label for="inputDescription" class="col-sm-2 col-form-label">Description</label>
               <div class="col-sm-10">
-                <textarea name="description" class="form-control" placeholder="Book description" id="inputDescription"></textarea>
+                <textarea name="book[description]" class="form-control" placeholder="Book description" id="inputDescription"></textarea>
               </div>
             </div>
           
